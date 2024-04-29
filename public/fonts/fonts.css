@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Eugenio Sans';
+    src: url('./eugenio-sans-text-regular.woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Eugenio Sans';
+    src: url('./eugenio-sans-text-medium.woff2');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Eugenio Serif';
+    src: url('./eugenio-text-regular.woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Eugenio Serif';
+    src: url('./eugenio-text-medium.woff2');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family:'Eugenio Book';
+    src: url('./eugenio-serif-medium.eot');
+    src: url('./eugenio-serif-medium.eot?#iefix') format('embedded-opentype'), url('./eugenio-serif-medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style:normal;
+    font-display:swap;
+}
+
+@font-face {
+    font-family: 'Eugenio Text';
+    src: url('./eugenio-text-regular.eot');
+    src: url('./eugenio-text-regular.eot?#iefix') format('embedded-opentype'), url('./eugenio-text-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}

@@ -1,0 +1,129 @@
+@import url('/public/fonts/fonts.css');
+
+:root {
+    --max-width: 100%;
+    --primary-color: #4b88ca;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    margin: 0;
+    font-family: "Eugenio Sans";
+    font-weight: 400;
+}
+
+a {
+    transition: .3s ease color, .3s ease fill;
+    cursor: pointer;
+}
+
+a:hover {
+    color: var(--primary-color);
+    fill: var(--primary-color);
+}
+
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: calc(100% - 500px);
+    margin-left: 250px;
+}
+
+.body-content {
+    flex: 1;
+}
+
+.boxed {
+    max-width: var(--max-width);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.skin-left {
+    position: fixed;
+    left: 0;
+    top: 50px;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 100%;
+    z-index: 9999;
+}
+
+.skin-right {
+    position: fixed;
+    right: 0;
+    top: 50px;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 100%;
+    z-index: 9999;
+}
+
+.skin-left > img,
+.skin-right > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 1540px) {
+    :root {
+        --max-width: 1260px;
+    }
+}
+
+@media screen and (max-width: 1540px) {
+    .skin-left,
+    .skin-right {
+        width: 150px;
+    }
+
+    .layout-container {
+        width: calc(100% - 300px);
+        margin-left: 150px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1539px) {
+    :root {
+        --max-width: 996px;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .skin-left,
+    .skin-right {
+        width: 80px;
+    }
+
+    .layout-container {
+        width: calc(100% - 160px);
+        margin-left: 80px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .skin-left,
+    .skin-right {
+        display: none;
+    }
+
+    .layout-container {
+        width: 100%;
+        margin-left: 0;
+    }
+}
