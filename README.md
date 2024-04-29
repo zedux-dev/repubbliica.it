@@ -1,4 +1,3 @@
-# La Repubbliica
 <img style="height: 50px;" src="https://github.com/zedux-dev/repubbliica.it/blob/main/public/images/logo.png?raw=true">
 
 Fake replica of repubblica.it Italian newspaper made as a joke.
